@@ -4,11 +4,15 @@ spring:
       dev
 
 ---
+server:
+  port: 8201
 spring:
   profiles: dev
   application:
     name: springcloud-config-client-3355-dev
 ---
+server:
+  port: 8201
 spring:
   profiles: test
   application:
