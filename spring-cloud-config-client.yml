@@ -9,11 +9,11 @@ server:
 spring:
   profiles: dev
   application:
-    name: springcloud-config-client-3355-dev
+    name: springcloud-config-client-3355
 ---
 server:
   port: 8202
 spring:
   profiles: test
   application:
-    name: springcloud-config-client-3355-test    
+    name: springcloud-config-client-3355
