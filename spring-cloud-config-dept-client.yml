@@ -3,8 +3,9 @@ spring:
     active: dev
 --- 
 spring:
+    profiles: dev
     datasource:
-        name: dev
+        name: clouddb01
         url: jdbc:mysql://localhost:3306/clouddb01?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         username: root
         password: admin
@@ -46,8 +47,9 @@ management:
 ---
 
 spring:
+    profiles: test
     datasource:
-        name: test
+        name: clouddb02
         url: jdbc:mysql://localhost:3306/clouddb02?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         username: root
         password: admin
